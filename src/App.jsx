@@ -1,32 +1,33 @@
-import './App.css'
+import Hourly from "./Hourly.jsx"
+import FiveDay from "./FiveDay.jsx"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <main>
+      <h1>Weather</h1>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <input type="text" />
+        <button>Search</button>
       </div>
-      <h1 className='w-100'>Vite + React</h1>
-      <div className="mt-4 w-100">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <h2>Ankara</h2>
+        <p>22 C</p>
+        <p>Partly cloudy</p>
+        <div>
+          <p>Highest: 16C</p>
+          <p>Lowest: 16C</p>
+        </div>
+        <div>
+          <p>60%</p>
+        </div>
+        <div>
+          <p>5 m/s</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Hourly />
+      <FiveDay />
+    </main>
+  );
 }
 
-export default App
+export default App;

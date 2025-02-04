@@ -1,0 +1,28 @@
+:root {
+  --bg-start: rgba(96, 165, 250);
+  --bg-end: rgba(37, 99, 235);
+  --text-white: rgba(255, 255, 255);
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.2);
+  --bg-white: rgba(255, 255, 255, 0.2);
+  --placeholder-white: rgba(255, 255, 255, 0.6);
+  --input-border: rgba(255, 255, 255, 0.3);
+}
+
+.custom-bg-gradient {
+  background: linear-gradient(to bottom, var(--bg-start), var(--bg-end));
+}
+
+.weather-card {
+  background: var(--card-bg);
+}
+
+h1 {
+  color: var(--text-white);
+}
+
+input {
+  border-color: var(--input-border);
+  background-color: var(--placeholder-white);
+}
+
